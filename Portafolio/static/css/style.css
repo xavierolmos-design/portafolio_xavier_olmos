@@ -1,0 +1,194 @@
+
+:root {
+  --negro-carbon: #1E1E24;
+  --amarillo-mostaza: #FFD000;
+  --naranja-base: #FF6B00;
+  --naranja-oscuro: #993300;
+  --blanco-crema: #FAF0CA;
+  --negro-puro: #000000;
+}
+
+
+body {
+  margin: 0;
+  padding: 20px 0;
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--blanco-crema);
+  min-height: 100vh;
+
+
+  background-image: 
+    radial-gradient(circle at 90% 10%, var(--amarillo-mostaza) 0%, #FFD00000 30%),
+    repeating-linear-gradient(
+      45deg, 
+      #FFD00026 0px, 
+      #FFD00026 10px, 
+      transparent 10px, 
+      transparent 20px
+    ),
+    radial-gradient(
+      circle at 50% 30%, 
+      var(--amarillo-mostaza) 0%, 
+      var(--naranja-base) 70%, 
+      var(--naranja-oscuro) 100%
+    );
+  
+  background-attachment: fixed;
+}
+
+#bg-canvas {
+  display: none;
+}
+
+.portfolio-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.patch-card {
+  background-color: var(--negro-carbon);
+  border: 4px solid var(--amarillo-mostaza);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 8px 8px 0px var(--negro-puro);
+  margin-bottom: 30px;
+  transition: transform 0.15s ease-out, box-shadow 0.15s ease-out;
+}
+
+.gremlin-navbar {
+  position: sticky;
+  top: 20px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.gremlin-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.gremlin-icon {
+  background-color: var(--amarillo-mostaza);
+  color: var(--negro-carbon);
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-weight: 900;
+  border: 2px solid var(--negro-puro);
+}
+
+.brand-name {
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: var(--naranja-base);
+  font-family: 'Arial Black', sans-serif;
+  text-transform: uppercase;
+}
+
+.logo-tag {
+  font-size: 0.65rem;
+  color: var(--blanco-crema);
+  letter-spacing: 1.5px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.clothing-tag {
+  display: inline-block;
+  color: var(--blanco-crema);
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  background-color: #2A2A32;
+  border: 2px solid var(--amarillo-mostaza);
+  border-radius: 6px;
+  box-shadow: 3px 3px 0px var(--negro-puro);
+  transition: all 0.15s ease;
+}
+
+.clothing-tag:hover, .tag-accent {
+  background-color: var(--amarillo-mostaza);
+  color: var(--negro-carbon) !important;
+  border-color: var(--negro-puro);
+}
+
+.clothing-tag:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px var(--negro-puro);
+}
+
+.badge {
+  background: var(--amarillo-mostaza);
+  color: var(--negro-carbon);
+  font-weight: 900;
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  border: 2px solid var(--negro-puro);
+}
+
+.highlight {
+  color: var(--amarillo-mostaza);
+}
+
+.contact-box {
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 12px;
+  border-radius: 8px;
+  border-left: 4px solid var(--amarillo-mostaza);
+}
+
+.email-link {
+  color: var(--amarillo-mostaza);
+  font-weight: bold;
+}
+
+.section-title {
+  font-family: 'Arial Black', sans-serif;
+  color: var(--amarillo-mostaza);
+  letter-spacing: 1px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  background-color: var(--amarillo-mostaza);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--amarillo-mostaza);
+}
+
+.status-text {
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: var(--amarillo-mostaza);
+}
+
+.email-btn {
+  margin-top: 10px;
+}
