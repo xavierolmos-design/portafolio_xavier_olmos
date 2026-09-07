@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex: 1;
+    background: radial-gradient(circle at 50% 20%, #FFD000 0%, #FF6B00 75%);
+    font-family: 'Comic Neue', cursive;
+    background-image:
+        radial-gradient(circle at 85% 15%,
+            #FFD000 0%,
+            #FFD00000 40%),
+        repeating-linear-gradient(45deg,
+            #FFD00040 0px,
+            #FFD00040 10px,
+            transparent 10px,
+            transparent 20px),
+        radial-gradient(circle at 50% 30%,
+            #FFD000 0%,
+            #FF6B00 70%,
+            #B33B00 100%);
+}
+
+.tarjetas {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
