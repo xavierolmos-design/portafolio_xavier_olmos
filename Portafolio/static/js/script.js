@@ -1,4 +1,4 @@
-console.log(Conexion exitosa...)
+
 
 const navbar = document.querySelector('.gremlin-navbar');
 
