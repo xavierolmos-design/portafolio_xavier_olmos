@@ -1,6 +1,6 @@
 
 
-const navbar = document.querySelector('.gremlin-navbar');
+const navbar = document.querySelector('.nav');
 
   window.addEventListener('scroll', () => {
     // Si el usuario baja más de 50px, añade la clase .scrolled

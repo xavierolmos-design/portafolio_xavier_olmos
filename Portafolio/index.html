@@ -9,101 +9,108 @@
     <link rel="stylesheet" href="static/CSS/style.css">
 </head>
 
-<body>
-    <header>
-        <nav class="gremlin-navbar">
-        </nav>
-    </header>
-    <main class="contenedor">
-        <section class="tarjetas">
-            <h1></h1>
-        </section>
-
-
-    </main>
-
-
-
-    <script src="static/JS/script.js"></script>
-    </head>
-
     <body>
-        <!-- PASO 3: Canvas para el fondo dinámico animado con JS -->
-        <canvas id="bg-canvas"></canvas>
+        <header>
+        <div class="container">
 
-        <!-- CONTENEDOR PRINCIPAL -->
-        <div class="portfolio-container">
+            <nav class="nav">
+                <div class="brand">
+                    <a href="https://www.linkedin.com/feed/"><img src="static/images/linkedim.png" alt="Logo Xavier Olmos" class="logo-img"></a>
 
-            <nav class="patch-card gremlin-navbar tilt-element">
-                <a href="#" class="gremlin-logo">
-                    <span class="gremlin-icon">✖‿✖</span>
-                    <div class="logo-group">
-                        <span class="brand-name">Xavier Olmos</span>
-                        <span class="logo-tag">JUNIOR SKILLNEST</span>
+                    <div class="brand-text">
+                        <span class="nombre">XAVIER OLMOS</span>
+                        <span class="skillnest">JUNIOR SKILLNEST</span>
                     </div>
-                </a>
-                <ul class="nav-links">
-                    <li><a href="#sobre-mi" class="clothing-tag">Sobre mí</a></li>
-                    <li><a href="#proyectos" class="clothing-tag">Proyectos</a></li>
-                    <li><a href="#contacto" class="clothing-tag tag-accent">Contacto</a></li>
-                </ul>
+                </div>
+                <div class="links">
+                    <button class="nav" onclick="scrollToId('sobre')">SOBRE MÍ</button>
+                    <button class="nav" onclick="scrollToId('proyectos')">PROYECTOS</button>
+                    <button class="nav primary" onclick="scrollToId('contacto')">CONTACTO</button>
+                </div>
             </nav>
-
-            <!-- SECCIÓN PRINCIPAL / HERO (Poster / Tarjeta) -->
-            <section id="sobre-mi" class="patch-card hero-card tilt-element">
-                <span class="badge">DEV PORTFOLIO</span>
-                <h1>Hola, soy <span class="highlight">Xavier Olmos</span></h1>
-                <p class="subtitle">Desarrollador en formación | Junior Skillnest</p>
-
-                <!-- Bloque de contacto directo -->
-                <div class="contact-box">
-                    <span class="contact-label">Email de contacto:</span>
-                    <a href="mailto:xavierolmos@liceovvh.cl" class="email-link">
-                        xavierolmos@liceovvh.cl
-                    </a>
+        </header>
+            <main class="container">
+            <section class="contacto" id="sobre">
+                <span class="badge">✦ DEV PORTFOLIO ✦</span>
+                <h1>Hola, soy <span class="hl">Xavier Olmos</span></h1>
+                <p>Desarrollador en formación | Junior Skillnest 🎮 Busco llegar a crear un juego tipo rpg o algo para jugar
+                    con mis amigos por ahora estoy aprendiendo Javascipt, HTML y CSS comun, pero al igual ya se usar
+                    HTML , CSS y Javascipt correctamente
+                </p>
+                <div class="email-caja">
+                    <span> Email de contacto:</span>
+                    <a href="mailto:xavierolmos@liceovvh.cl">xavierolmos@liceovvh.cl</a>
                 </div>
             </section>
-
-            <!-- SECCIÓN DE PROYECTOS -->
-            <section id="proyectos" class="projects-section">
-                <h2 class="section-title">PROYECTOS EN PROCESO</h2>
-
-                <div class="projects-grid">
-                    <!-- Tarjeta de Proyecto 01 -->
-                    <article class="patch-card project-card tilt-element">
-                        <div class="card-header">
-                            <span class="status-dot"></span>
-                            <span class="status-text">EN DESARROLLO</span>
-                        </div>
-                        <h3>Proyecto 01</h3>
-                        <p>Descripción breve del proyecto en el que estás trabajando actualmente.</p>
-                    </article>
-
-                    <!-- Tarjeta de Proyecto 02 -->
-                    <article class="patch-card project-card tilt-element">
-                        <div class="card-header">
-                            <span class="status-dot"></span>
-                            <span class="status-text">EN DESARROLLO</span>
-                        </div>
-                        <h3>Proyecto 02</h3>
-                        <p>Descripción breve del proyecto en el que estás trabajando actualmente.</p>
-                    </article>
+            <h2 class="section-title" id="proyectos">PROYECTOS EN PROCESO</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-corner tl"></div>
+                    <div class="card-corner tr"></div>
+                    <div class="card-corner bl"></div>
+                    <div class="card-corner br"></div>
+                    <div class="card-header">
+                        <div class="status-dot"></div>
+                        <span class="status-text">DESARROLLADO PARCIALMENTE</span>
+                        <span class="card-num">Nº 001 / RARE</span>
+                    </div>
+                    <h3 class="card-title">Proyecto 01</h3>
+                    <div class="patch">
+                        <span class="patch-stitch tl">✂</span>
+                        <span class="patch-stitch br">✂</span>
+                        <p class="patch-text">ECOLOCHILE: 
+                            Crear una aplicacion sobre reciclaje en el que la gente puede ser voluntario y vecino
+                            Tecnologias usadas: Javascipt,HTML,CSS 
+                            vista previa : 🧵</p>
+                    </div>
+                    <div class="card-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JS</span>
+                    </div>
                 </div>
+                <div class="card">
+                    <div class="card-corner tl"></div>
+                    <div class="card-corner tr"></div>
+                    <div class="card-corner bl"></div>
+                    <div class="card-corner br"></div>
+                    <div class="card-header">
+                        <div class="status-dot"></div>
+                        <span class="status-text">EN DESARROLLO</span>
+                        <span class="card-num">Nº 002 / RARE</span>
+                    </div>
+                    <h3 class="card-title">Proyecto 02</h3>
+                    <div class="patch">
+                        <span class="patch-stitch tl">✂</span>
+                        <span class="patch-stitch br"></span>
+                        <p class="patch-text">Pagina web personaje:
+                            es una pagina web que se enfoca en un solo personaje 
+                            tecnologias: HTML,Javascript,CSS,boostrap
+                            Vista previa:🎨</p>
+                    </div>
+                    <div class="card-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JS</span>
+                    </div>
+                </div>
+            </div>
+            <section class="contact-card" id="contacto">
+                <h2>¿HABLAMOS? 💬</h2>
+                <p>Puedes enviarme un correo directo para consultas. ¡Te espero!</p>
+                <button class="send-btn" onclick="sendMsg()">
+                    <a href="">ENVIAR MENSAJE ✕</a>
+                </button>
             </section>
-
-            <!-- SECCIÓN DE CONTACTO -->
-            <section id="contacto" class="patch-card contact-section tilt-element">
-                <h2 class="section-title">¿HABLAMOS?</h2>
-                <p>Puedes enviarme un correo directo para colaboraciones o consultas:</p>
-                <a href="mailto:xavierolmos@liceovvh.cl" class="clothing-tag tag-accent email-btn">
-                    ENVIAR MENSAJE ✖
-                </a>
-            </section>
+            </main>
+            <footer>
+                Hecho con mucho cariño por Xavier Olmos · Junior Skillnest ✦
+            </footer>
 
         </div>
+
         </main>
         <script src="static/js/script.js"></script>
-        >>>>>>> 6d8b0ba54e34cdf0f5b99322655aac1ae7656b3c
     </body>
 
 </html>
