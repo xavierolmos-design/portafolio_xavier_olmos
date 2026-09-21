@@ -1,116 +1,167 @@
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
-    <meta name="author" content="Xavier">
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <title>Portafolio - Xavier Olmos</title>
+    <meta name="author" content="Xavier Olmos">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/CSS/style.css">
 </head>
 
-    <body>
-        <header>
-        <div class="container">
+<body>
+    <div class="contenedor-principal">
 
-            <nav class="nav">
-                <div class="brand">
-                    <a href="https://www.linkedin.com/feed/"><img src="static/images/linkedim.png" alt="Logo Xavier Olmos" class="logo-img"></a>
-
-                    <div class="brand-text">
-                        <span class="nombre">XAVIER OLMOS</span>
-                        <span class="skillnest">JUNIOR SKILLNEST</span>
+        <header class="encabezado-principal">
+            <nav class="barra-navegacion">
+                <div class="info-marca">
+                    <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener">
+                        <img src="static/images/linkedim.png" alt="Logo Xavier Olmos" class="logo-marca">
+                    </a>
+                    <div class="texto-marca">
+                        <span class="nombre-usuario">XAVIER OLMOS</span>
+                        <span class="subtitulo-usuario">JUNIOR SKILLNEST</span>
                     </div>
                 </div>
-                <div class="links">
-                    <button class="nav" onclick="scrollToId('sobre')">SOBRE MÍ</button>
-                    <button class="nav" onclick="scrollToId('proyectos')">PROYECTOS</button>
-                    <button class="nav primary" onclick="scrollToId('contacto')">CONTACTO</button>
+
+                <div class="acciones-navegacion">
+                    <button class="boton-nav" onclick="scrollToId('sobre-mi')">SOBRE MÍ</button>
+                    <button class="boton-nav" onclick="scrollToId('proyectos')">PROYECTOS</button>
+                    <button class="boton-nav boton-nav--principal" onclick="scrollToId('contacto')">CONTACTO</button>
                 </div>
             </nav>
         </header>
-            <main class="container">
-            <section class="contacto" id="sobre">
-                <span class="badge">✦ DEV PORTFOLIO ✦</span>
-                <h1>Hola, soy <span class="hl">Xavier Olmos</span></h1>
-                <p>Desarrollador en formación | Junior Skillnest 🎮 Busco llegar a crear un juego tipo rpg o algo para jugar
-                    con mis amigos por ahora estoy aprendiendo Javascipt, HTML y CSS comun, pero al igual ya se usar
-                    HTML , CSS y Javascipt correctamente
+
+        <main>
+
+            <section class="seccion-hero animar-al-scroll" id="sobre-mi">
+                <span class="insignia-hero">✦ DEV PORTFOLIO ✦</span>
+                <h1 class="titulo-hero">Hola, soy <span class="texto-resaltado">Xavier Olmos</span></h1>
+                <p class="descripcion-hero">
+                    Desarrollador en formación | Junior Skillnest 🎮 Busco llegar a crear un juego tipo RPG para jugar con mis amigos. 
+                    Actualmente domino HTML, CSS y JavaScript para construir experiencias web interactivas.
                 </p>
-                <div class="email-caja">
-                    <span> Email de contacto:</span>
-                    <a href="mailto:xavierolmos@liceovvh.cl">xavierolmos@liceovvh.cl</a>
+
+                <div class="contenedor-estadisticas">
+                    <div class="item-estadistica">
+                        <span class="numero-contador" data-target="2">2</span>
+                        <span class="etiqueta-estadistica">Proyectos activos</span>
+                    </div>
+                    <div class="item-estadistica">
+                        <span class="numero-contador" data-target="100">100</span>%
+                        <span class="etiqueta-estadistica">Entusiasmo</span>
+                    </div>
+                </div>
+
+                <div class="caja-correo">
+                    <span>Email de contacto:</span>
+                    <a href="mailto:xavierolmos@liceovvh.cl" class="enlace-correo">xavierolmos@liceovvh.cl</a>
                 </div>
             </section>
-            <h2 class="section-title" id="proyectos">PROYECTOS EN PROCESO</h2>
-            <div class="cards-grid">
-                <div class="card">
-                    <div class="card-corner tl"></div>
-                    <div class="card-corner tr"></div>
-                    <div class="card-corner bl"></div>
-                    <div class="card-corner br"></div>
-                    <div class="card-header">
-                        <div class="status-dot"></div>
-                        <span class="status-text">DESARROLLADO PARCIALMENTE</span>
-                        <span class="card-num">Nº 001 / RARE</span>
-                    </div>
-                    <h3 class="card-title">Proyecto 01</h3>
-                    <div class="patch">
-                        <span class="patch-stitch tl">✂</span>
-                        <span class="patch-stitch br">✂</span>
-                        <p class="patch-text">ECOLOCHILE: 
-                            Crear una aplicacion sobre reciclaje en el que la gente puede ser voluntario y vecino
-                            Tecnologias usadas: Javascipt,HTML,CSS 
-                            vista previa : 🧵</p>
-                    </div>
-                    <div class="card-tags">
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JS</span>
-                    </div>
+
+            <section class="seccion-proyectos animar-al-scroll" id="proyectos">
+                <h2 class="titulo-seccion">PROYECTOS EN PROCESO</h2>
+
+                <div class="barra-filtros">
+                    <button class="boton-filtro esta-activo" data-filtro="todos">Todos</button>
+                    <button class="boton-filtro" data-filtro="web">Web App</button>
+                    <button class="boton-filtro" data-filtro="contenido">Creadores</button>
                 </div>
-                <div class="card">
-                    <div class="card-corner tl"></div>
-                    <div class="card-corner tr"></div>
-                    <div class="card-corner bl"></div>
-                    <div class="card-corner br"></div>
-                    <div class="card-header">
-                        <div class="status-dot"></div>
-                        <span class="status-text">EN DESARROLLO</span>
-                        <span class="card-num">Nº 002 / RARE</span>
-                    </div>
-                    <h3 class="card-title">Proyecto 02</h3>
-                    <div class="patch">
-                        <span class="patch-stitch tl">✂</span>
-                        <span class="patch-stitch br"></span>
-                        <p class="patch-text">Pagina web personaje:
-                            es una pagina web que se enfoca en un solo personaje 
-                            tecnologias: HTML,Javascript,CSS,boostrap
-                            Vista previa:🎨</p>
-                    </div>
-                    <div class="card-tags">
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JS</span>
-                    </div>
+
+                <div class="grilla-proyectos">
+
+                    <article class="tarjeta-proyecto" data-categoria="web">
+                        <div class="esquina-tarjeta esquina-tarjeta--arriba-izquierda"></div>
+                        <div class="esquina-tarjeta esquina-tarjeta--arriba-derecha"></div>
+                        <div class="esquina-tarjeta esquina-tarjeta--abajo-izquierda"></div>
+                        <div class="esquina-tarjeta esquina-tarjeta--abajo-derecha"></div>
+
+                        <div class="encabezado-tarjeta">
+                            <div class="indicador-estado"></div>
+                            <span class="etiqueta-estado">DESARROLLADO PARCIALMENTE</span>
+                            <span class="id-proyecto">Nº 001 / RARE</span>
+                        </div>
+
+                        <h3 class="titulo-tarjeta">Ecolochile</h3>
+
+                        <div class="caja-vista-previa">
+                            <p class="descripcion-tarjeta">
+                                Aplicación orientada al reciclaje para conectar voluntarios y vecinos.
+                            </p>
+                            <img src="static/images/Gemini_Generated_Image_br3gjibr3gjibr3g-removebg-preview.png" alt="Logo Ecolochile" class="imagen-vista-previa">
+                        </div>
+
+                        <div class="lista-etiquetas">
+                            <span class="etiqueta-tecnologia">HTML</span>
+                            <span class="etiqueta-tecnologia">CSS</span>
+                            <span class="etiqueta-tecnologia">JS</span>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-proyecto" data-categoria="contenido">
+                        <div class="esquina-tarjeta esquina-tarjeta--arriba-izquierda"></div>
+                        <div class="esquina-tarjeta esquina-tarjeta--arriba-derecha"></div>
+                        <div class="esquina-tarjeta esquina-tarjeta--abajo-izquierda"></div>
+                        <div class="esquina-tarjeta esquina-tarjeta--abajo-derecha"></div>
+
+                        <div class="encabezado-tarjeta">
+                            <div class="indicador-estado"></div>
+                            <span class="etiqueta-estado">EN DESARROLLO</span>
+                            <span class="id-proyecto">Nº 002 / RARE</span>
+                        </div>
+
+                        <h3 class="titulo-tarjeta">Sitio Web VTuber</h3>
+
+                        <div class="caja-vista-previa">
+                            <p class="descripcion-tarjeta">
+                                Sitio enfocado en promocionar y dar soporte a una creadora de contenido VTuber.
+                            </p>
+                            <video class="video-vista-previa" controls>
+                                <source src="static/videos/bandicam 2026-09-21 15-38-33-016.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="lista-etiquetas">
+                            <span class="etiqueta-tecnologia">HTML</span>
+                            <span class="etiqueta-tecnologia">CSS</span>
+                            <span class="etiqueta-tecnologia">JS</span>
+                            <span class="etiqueta-tecnologia">Bootstrap</span>
+                        </div>
+                    </article>
+
                 </div>
-            </div>
-            <section class="contact-card" id="contacto">
+            </section>
+            <section class="seccion-contacto animar-al-scroll" id="contacto">
                 <h2>¿HABLAMOS? 💬</h2>
-                <p>Puedes enviarme un correo directo para consultas. ¡Te espero!</p>
-                <button class="send-btn" onclick="sendMsg()">
-                    <a href="">ENVIAR MENSAJE ✕</a>
-                </button>
+                <p>Puedes enviarme una consulta rápida usando este formulario o escribirme directamente.</p>
+
+                <form class="formulario-contacto" id="formularioContacto">
+                    <input type="text" placeholder="Tu nombre" required class="campo-entrada">
+                    <input type="email" placeholder="Tu correo electrónico" required class="campo-entrada">
+                    <textarea placeholder="Tu mensaje..." required class="campo-texto" rows="4"></textarea>
+
+                    <button type="submit" class="boton-enviar">ENVIAR MENSAJE ✕</button>
+                </form>
+                <div id="mensajeRespuesta" class="mensaje-respuesta"></div>
             </section>
-            </main>
-            <footer>
-                Hecho con mucho cariño por Xavier Olmos · Junior Skillnest ✦
-            </footer>
-
-        </div>
-
         </main>
-        <script src="static/js/script.js"></script>
-    </body>
+
+        <footer class="pie-pagina">
+            Hecho con mucho cariño por Xavier Olmos · Junior Skillnest ✦
+        </footer>
+
+    </div>
+
+    <div class="superposicion-modal" id="modalProyecto">
+        <div class="contenido-modal">
+            <button class="boton-cerrar-modal" id="cerrarModal">&times;</button>
+            <h3 class="titulo-modal" id="tituloModal">Título del Proyecto</h3>
+            <p class="descripcion-modal" id="descripcionModal">Detalles ampliados sobre la tecnología y alcance.</p>
+        </div>
+    </div>
+
+    <script src="static/js/script.js"></script>
+</body>
 
 </html>
