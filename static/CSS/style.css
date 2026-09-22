@@ -420,3 +420,8 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+
+.numero-contador a{
+    text-decoration: none;
+    color: white;
+}
